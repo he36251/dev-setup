@@ -1,0 +1,181 @@
+{
+	"variables": [],
+	"info": {
+		"name": "HB auth",
+		"_postman_id": "b9d24eed-4497-6bd9-c182-0187010a8af6",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Auth Request",
+			"request": {
+				"url": {
+					"raw": "https://auth.hunchbuzz.com/v1/checkuser.php?email=hunchbuzz_app_demo_1@mailinator.com&platform=hunchbuzzdemo",
+					"protocol": "https",
+					"host": [
+						"auth",
+						"hunchbuzz",
+						"com"
+					],
+					"path": [
+						"v1",
+						"checkuser.php"
+					],
+					"query": [
+						{
+							"key": "email",
+							"value": "hunchbuzz_app_demo_1@mailinator.com",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "platform",
+							"value": "hunchbuzzdemo",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Get Auth-Key",
+			"request": {
+				"url": "https://auth.hunchbuzz.com/v1/checkpassword.php",
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "email",
+							"value": "hunchbuzz_app_demo_1@mailinator.com",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "platform",
+							"value": "hunchbuzzdemo",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "hunchbuzz1234",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Get Auth-Key",
+			"request": {
+				"url": {
+					"raw": "https://auth.hunchbuzz.com/v1/checkpassword.php?email=hunchbuzz_app_demo_1@mailinator.com&password=hunchbuzz1234&platform=hunchbuzzdemo",
+					"protocol": "https",
+					"host": [
+						"auth",
+						"hunchbuzz",
+						"com"
+					],
+					"path": [
+						"v1",
+						"checkpassword.php"
+					],
+					"query": [
+						{
+							"key": "email",
+							"value": "hunchbuzz_app_demo_1@mailinator.com",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "password",
+							"value": "hunchbuzz1234",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "platform",
+							"value": "hunchbuzzdemo",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "CheckAuth",
+			"request": {
+				"url": {
+					"raw": "https://auth.hunchbuzz.com/v1/checkauth.php?key=c28da550c8742e7375f07aa10a32c24d&email=hunchbuzz_app_demo_1@mailinator.com",
+					"protocol": "https",
+					"host": [
+						"auth",
+						"hunchbuzz",
+						"com"
+					],
+					"path": [
+						"v1",
+						"checkauth.php"
+					],
+					"query": [
+						{
+							"key": "key",
+							"value": "c28da550c8742e7375f07aa10a32c24d",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "email",
+							"value": "hunchbuzz_app_demo_1@mailinator.com",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "CheckPlatform",
+			"request": {
+				"url": "https://api-new.hunchbuzz.com/api/v1/platform/hunchbuzzdemo",
+				"method": "GET",
+				"header": [
+					{
+						"key": "token",
+						"value": "c28da550c8742e7375f07aa10a32c24d",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}

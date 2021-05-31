@@ -84,7 +84,7 @@
                 "name": "GitBash",
                 "padding": "0, 0, 0, 0",
                 "snapOnInput": true,
-                "startingDirectory": "%HOMEDRIVE%\\Repos",
+                "startingDirectory": "C:/projects",
                 "useAcrylic": false
             }
         ]
